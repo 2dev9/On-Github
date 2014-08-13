@@ -1,42 +1,64 @@
-
 <!DOCTYPE html>
 <head>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="newsfinder.js"></script>
-	<script type="text/javascript" src="helper.js"></script>
-	<link rel="stylesheet" type="text/css" href="reset.css"></link>
-	<link rel="stylesheet" type="text/css" href="main.css"></link>
+	<script type="text/javascript" src="javascript/main.js"></script>
+	<script type="text/javascript" src="javascript/helper.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Open+Sans:400,700,800,300,600' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
+
+
+
 	<header>
-		<h1>News Aggregate Site!</h1>
-		<h2>The News Site from All Sources!</h2>
+		<nav>
+			<ul>
+				<li class="menu-item" id="logo"><a href="index.html">News.ly</a></li>
+				<li class="menu-item" ><a href="about.html">About</a></li>
+				<li class="menu-item" ><a href="contact.html">Contact</a></li>
+				<li class="menu-item" id="search">
+					<input id="searchBox" placeholder="Search by Keyword">
+					<input id ="searchButton" type="submit">
+				</li>
+
+			</ul>
+			</nav>
 	</header>
-	<nav>
-		<ul id="searchtools">
-			<li><a href="about.html">About this Website</a></li>
-			<li><a href="contact.html">Contact and Learning</a></li>
-			<input id="searchBox" placeholder="Search by Source">
-			<input id ="searchButton" type="submit">
-			<p>Trending Topics in the News</p>
-			<select>
-				<option value="0">Trending 1</option>
-				<option value="1">Trending 2</option>
-				<option value="2">Trending 3</option>
-			</select>
+
+	<main>
+		<ul id="headlines">
+			
 		</ul>
-	</nav>
+	</main>
 
 
-	<ul id="headlines">
-	
-	</ul>
+
+	<!-- <li class="menu-item">
+	<span>Trending</span> -->
+		<!-- <select id="topicList"></select>
+		<input id ="topicButton" type="submit">
+	</li> -->
+
+
+	<footer>
+		&copy; Rasheed Evelyn and Devon Howell
+		<!-- Made with Love in NYC -->
+	</footer>
+
+
+
 </body>
 
-<footer>
-	&copy; Rasheed Evelyn and Devon Howell
-</footer>
+
 
 
 <!-- <div style="width:300px;height:400px;border:200px;solid #000;">
+-->
+
+
+
+
+
+
+
