@@ -1,0 +1,46 @@
+main{
+	max-width: 750px;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding-top: 40px;
+	font-family: Lato;
+
+
+}
+
+header{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-color: gray;
+	
+	/*position: fixed;*/
+}
+
+.menu-item {
+	display: inline-block;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-family: Lato;
+	color: #00bfff;
+	a, a:visited, a:hover {
+	text-decoration: none;
+	
+}
+#logo{
+	font-weight: bold;
+}
+
+#search {
+	float: right;
+}
+
+#rasheed{
+	padding-bottom: 40px;
+	
+
+}
+#devon{
+	float: right;
+}

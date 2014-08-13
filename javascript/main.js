@@ -7,18 +7,15 @@ $(document).ready(function() {
   var topicArray = [];
 
   var addTitleAndUrlToArticleList = function(article) {
+    //debugger
+    article.publish_date = article.publish_date.substr(0,22);
 
     var htmlTemplate = '<li>\
                           <h1><a target="_blank" href="{url}">{title}</a></h1> \
-                          <h2>{source}</h2>\
-                          <p>{summary}<p> <br>\
+                          <h2>{publish_date} from {source}</h2>\
+                          <p>{summary}<p>\
                         </li>';
-  //   var htmlTemplate = '<li>\
-  //   <h2><a href"{url}">{title}</a></h2>\
-  //   <h3>"Retrofit needed to keep U.S. hurricane hunters flying into storms (reuters)"</h3>\
-  //   <p>Tue, 12 Aug 2014"MIAMI Fla. (Reuters)</p>\  
-  //   <p>"{summary}"</p>\
-  // </li>'
+  
 
     var html = htmlTemplate.fill(article);
     $("#headlines").append(html);
@@ -35,10 +32,12 @@ $(document).ready(function() {
     $("#headlines").empty();
 
 
-    var articleArray = response.articles; 
+    var articleArray = response.articles;
+    if(articleArray.length==0){
+      $("#headlines").append('<li id="noResults">No articles match your search terms</li>');
+    } 
     for(var i=0; i<articleArray.length; i++) {
       var article = articleArray[i];
-      //article.Url = "http://imdb.com/title/" + movie.imdbID;
 
       addTitleAndUrlToArticleList(article);
     }
