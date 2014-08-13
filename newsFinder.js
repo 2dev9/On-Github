@@ -32,7 +32,7 @@ $(document).ready(function() {
 
     var ajaxParameters = {
       "url":"http://api.feedzilla.com/v1/articles/search",
-      "data": {"q": searchTerms, "count":15},
+      "data": {"q": searchTerms},
       "crossDomain": true,
       "dataType": 'json',
       "success": handleFeedzillaArticles
