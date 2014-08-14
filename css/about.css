@@ -24,8 +24,12 @@ header{
 	padding-right: 25px;
 	font-family: Lato;
 	color: #00bfff;
+	font-size: 18px;
+	font-weight: 300;
+}
 	a, a:visited, a:hover {
 	text-decoration: none;
+	color: #00bfff;
 	
 }
 #logo{
@@ -36,11 +40,26 @@ header{
 	float: right;
 }
 
-#rasheed{
-	padding-bottom: 40px;
-	
-
+#searchBox{
+	font-size: 14px;
 }
-#devon{
-	float: right;
+
+#searchButton{
+	font-size: 14px;
+	background-color: #00bfff;
+	color:white;
+}
+
+.Rasheed{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.Devon{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+	
+footer{
+	text-align: center;
 }
