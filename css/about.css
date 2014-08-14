@@ -1,7 +1,7 @@
 main{
-	max-width: 750px;
-	margin-left: 40px;
-	margin-right: 40px;
+	max-width: 800px;
+	margin-left: 150px;
+	margin-right: auto;
 	padding-top: 40px;
 	font-family: Lato;
 
@@ -34,6 +34,7 @@ header{
 }
 #logo{
 	font-weight: bold;
+	font-size: 22px;
 }
 
 #search {
@@ -53,10 +54,32 @@ header{
 .Rasheed{
 	padding-bottom: 20px;
 	padding-top: 20px;
+
 }
+
+.Rasheed p {
+	position: relative;
+	bottom: 200px;
+	left: 310px;
+
+}
+.Rasheed img {
+	height: 300px;
+	width: 290px;
+
+}
+
+
 .Devon{
 	padding-bottom: 20px;
 	padding-top: 20px;
+}
+
+.Devon p {
+	position: relative;
+	bottom: 200px;
+	left: 310px;
+
 }
 
 	
